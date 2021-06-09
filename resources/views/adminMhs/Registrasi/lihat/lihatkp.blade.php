@@ -1,7 +1,6 @@
 @extends('adminMhs.layouts.master')
 
 @section('content')
-
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
@@ -33,6 +32,8 @@
             <th scope="col">Judul KP</th>
             <th scope="col">Penguji</th>
             <th scope="col">Ruangan</th>
+            <th scope="col">Tools</th>
+            <th scope="col">Spesifikasi</th>
             <th scope="col">Status Ujian</th>
             <th scope="col">Jadwal Ujian</th>
             <th scope="col">File</th>
@@ -49,23 +50,24 @@
             <th scope="row">{{ $no++ }}</th>
             <td>{{ $r->nim }}</td>
             <td>{{ $r->nama }}</td>
-            <td>{{ $r->tahun_pengajuan }}</td>
+            <td>{{ $r->tahun }}</td>
             <td>{{ $r->semester }}</td>
-            <td>{{ $r->jenis_kelamin}}</td>
+            <td>{{ $r->statuskp}}</td>
             <td>{{ $r->nama_lembaga }}</td>
             <td>{{ $r->pimpinan}}</td>
             <td>{{ $r->alamat_lembaga}}</td>
             <td>{{ $r->no_telpon }}</td>
-            <td>{{ $r->nik}}</td>
+            <td>{{ $r->nidn}}</td>
             <td>{{ $r->judul_kp}}</td>
             <td>{{ $r->penguji}}</td>
             <td>{{ $r->ruang}}</td>
+            <td>{{ $r->tools}}</td>
+            <td>{{ $r->spesifikasi}}</td>
             <td>{{ $r->status_ujian}}</td>
             <td>{{ $r->jadwal_ujian}}</td>
-            <td>{{ $r->file }}</td>
-            <td>{{ $r->verifikasi }}</td>
-           
-            <td><a href="/formkp/edit/" class="btn btn-danger">edit</a></td>  
+            <td>{{ $r->filereq }}</td>
+            <td>{{ $r->verifikasi_kp }}</td>
+             
             </tr>
                     
         </tbody>   

@@ -62,11 +62,7 @@
       </div>
       <div class="row">
         <div class="col-xs-8">
-          <div class="checkbox icheck">
-            <label>
-              <input type="checkbox">Remember Me
-            </label>
-          </div>
+         
         </div>
         <!-- /.col -->
         <div class="col-xs-4">
@@ -82,7 +78,7 @@
     </div>
     <!-- /.social-auth-links -->
 
-    <a href="register.html" class="text-center">Register</a>
+   
 
   </div>
   <!-- /.login-box-body -->

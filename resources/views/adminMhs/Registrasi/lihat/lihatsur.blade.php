@@ -44,11 +44,14 @@
             <td>{{ $s->tahun }}</td>
             <td>{{ $s->semester }}</td>
             <td>{{ $s->nama_lembaga }}</td>
+            <td>{{ $s->pimpinan }}</td>
+            <td>{{ $s->alamat }}</td>
             <td>{{ $s->fax_lembaga }}</td>
+            <td>{{ $s->no_telpon }}</td>
             <td>{{ $s->email }}</td>
             <td>{{ $s->filesurat }}</td>
-            <td>{{ $s->verifikasisurat }}</td>
-            <td><a href="/suratkp/edit/" class="btn btn-danger">edit</a></td>  
+            <td>{{ $s->verifikasi_surat }}</td>
+           
             </tr>
                     
         </tbody>  

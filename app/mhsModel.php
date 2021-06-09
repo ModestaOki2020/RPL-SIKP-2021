@@ -8,5 +8,5 @@ class mhsModel extends Model
 {
     protected $table = 'mahasiswa';
 
-    protected $fillable =['nim','nama','level','email', 'password'];
+    protected $fillable =['nim','nama'];
 }

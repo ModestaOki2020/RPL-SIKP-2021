@@ -24,7 +24,10 @@
             <th scope="col">Tahun</th>
             <th scope="col">Semester</th>
             <th scope="col">Nama Lembaga</th>
+            <th scope="col">Pimpinan</th>
+            <th scope="col">Alamat</th>
             <th scope="col">Fax Lembaga</th>
+            <th scope="col">No Telpon</th>
             <th scope="col">Email</th>
             <th scope="col">Surat</th>
             <th scope="col">Verifikasi</th>
@@ -34,23 +37,26 @@
         @php 
             $no=1;           
         @endphp
-        @foreach($su as $s)
+        @foreach($tp as $t)
         <tbody>
             <tr>
             <th scope="row">{{ $no++ }}</th>
-            <td>{{ $s->id_ket }}</td>
-            <td>{{ $s->nim }}</td>
-            <td>{{ $s->tahun }}</td>
-            <td>{{ $s->semester }}</td>
-            <td>{{ $s->nama_lembaga }}</td>
-            <td>{{ $s->fax_lembaga }}</td>
-            <td>{{ $s->email }}</td>
-            <td>{{ $s->filesurat }}</td>
-            <td>{{ $s->verifikasisurat }}</td>
-            <td><a href="/suratkp/edit/" class="btn btn-danger">edit</a></td>  
+            <td>{{ $t->id_ket }}</td>
+            <td>{{ $t->nim }}</td>
+            <td>{{ $t->tahun }}</td>
+            <td>{{ $t->semester }}</td>
+            <td>{{ $t->nama_lembaga }}</td>
+            <td>{{ $t->pimpinan }}</td>
+            <td>{{ $t->alamat }}</td>
+            <td>{{ $t->fax_lembaga }}</td>
+            <td>{{ $t->no_telpon }}</td>
+            <td>{{ $t->email }}</td>
+            <td>{{ $t->filesurat }}</td>
+            <td>{{ $t->verifikasi_surat }}</td>
+            <td><a href="/verifikasisurkp/edit/{{$t->id_ket}}" class="btn btn-danger">edit</a></td>  
             </tr>
                     
-        </tbody>   
+        </tbody>  
         @endforeach
 
         </table>

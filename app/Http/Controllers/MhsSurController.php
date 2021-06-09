@@ -26,15 +26,17 @@ class MhsSurController extends Controller
     public function tambah(Request $request)
     {
         DB::table('suratkp')->insert([
-            'id_ket' => $request->id_ket,
             'nim' => $request->nim,
             'tahun' => $request->tahun,
             'semester' => $request->semester,
             'nama_lembaga' => $request->nama_lembaga,
+            'alamat' => $request->alamat,
+            'pimpinan' => $request->pimpinan,
+            'no_telpon' => $request->no_telpon,
             'fax_lembaga' => $request->fax_lembaga,
             'email' => $request->email,
             'filesurat' => $request->filesurat,
-            'verifikasisurat' => $request->verifikasisurat="belum terverifikasi"
+            'verifikasi_surat' => $request->verifikasi_surat="belum terverifikasi"
            
     
         ]);

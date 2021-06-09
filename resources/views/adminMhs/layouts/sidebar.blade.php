@@ -18,7 +18,7 @@
         <li class="active treeview">
         <li>
           <a href="{{ url('/profile') }}">
-            <i class="fa fa-th"></i> <span>Data diri mahasiswa</span>
+            <i class="glyphicon glyphicon-user"></i> <span>Data diri mahasiswa</span>
           </a>
         </li>
         <li><a href="{{ url('/registrasi') }}"><i class="fa fa-book"></i> <span>registrasi KP</span></a></li>

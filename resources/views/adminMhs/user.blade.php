@@ -22,11 +22,18 @@
               <h3 class="profile-username text-center">{{ auth()->user()->name }}</h3>
 
               <p class="text-muted text-center">{{ $job }} </p>
+              
 
               <ul class="list-group list-group-unbordered">
                 <li class="list-group-item">
                   <b>Email</b> <a class="pull-right">{{ auth()->user()->email }}</a>
+                  </li>
+                  @foreach($mh as $m)
+                  <li class="list-group-item">
+                  <b>Nim</b> <a class="pull-right">{{ $m->nim }}</a>
                 </li>
+                @endforeach
+
               </ul>
             </div>
             <!-- /.box-body -->
@@ -56,6 +63,9 @@
             </div>
             <!-- /.box-body -->
           </div>
+          <div class="box-footer">
+                <button type="submit" class="btn btn-default"><a href="{{ url('/profileinfo') }}">Tambahkan Data</button>
+        </div>
       
        
       </div>

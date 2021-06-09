@@ -24,19 +24,19 @@ class PrakpController extends Controller
             'nama' => $request->nama,
             'tahun' => $request->tahun,
             'semester' => $request->semester,
-            'lembaga' => $request->lembaga,
+            'nama_lembaga' => $request->nama_lembaga,
+            'status_pra' => $request->status_pra="Belum terverifikasi",
             'pimpinan' => $request->pimpinan,
             'alamat' => $request->alamat,
             'no_telpon' => $request->no_telpon,
-            'filepra' => $request->filepra,
+            'filereq' => $request->filereq,
             'tools' => $request->tools,
-            'nik' => $request->tools=" ",
-            'penguji' => $request->tools=" ",
-            'ruangan' => $request->tools=" ",
+            'nidn' => $request->nidn="721600000",
+            'penguji' => $request->penguji="-",
+            'ruang' => $request->ruang="-",
             'spesifikasi' => $request->spesifikasi,
-            'verifikasipra' => $request->verifikasipra="belum terverifikasi"
+            'verifikasi_pra'=>$request->verifikasi_pra="belum terverifikasi"
         
-
         ]);
         return redirect('/menupra');
     }

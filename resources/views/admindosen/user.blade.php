@@ -18,7 +18,7 @@
          <!-- Profile Image -->
          <div class="box box-primary">
             <div class="box-body box-profile">
-              <img class="profile-user-img img-responsive img-circle" src="../../dist/img/user4-128x128.jpg" alt="User profile picture">
+             
 
               <h3 class="profile-username text-center">{{ auth()->user()->name }}</h3>
 
@@ -27,6 +27,7 @@
                     <li class="list-group-item">
                       <b>Email</b> <a class="pull-right">{{ auth()->user()->email }}</a>
                     </li>
+                    
                   </ul>
             </div>
             <!-- /.box-body -->
@@ -56,6 +57,9 @@
             </div>
             <!-- /.box-body -->
           </div>
+          <div class="box-footer">
+                <button type="submit" class="btn btn-default"><a href="{{ url('/profileinfoKo') }}">Tambahkan Data</button>
+        </div>
       
        
       </div>

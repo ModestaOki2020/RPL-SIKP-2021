@@ -11,10 +11,8 @@ class Koordinator extends Migration
     {
         Schema::create('koordinator', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('nidn')->unique();
+            $table->integer('nidnkord')->autoIncrement()->index()->nullable();;
             $table->string('nama');
-            $table->string('email');
-            $table->string('password');
             $table->timestamps();
         });
     }
@@ -26,6 +24,6 @@ class Koordinator extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('koordinator');
     }
 }

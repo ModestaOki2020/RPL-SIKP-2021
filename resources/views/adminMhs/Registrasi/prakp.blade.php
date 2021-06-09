@@ -56,7 +56,7 @@
             <div class="form-group row">
                 <label for="inputNamaLembaga" class="col-sm-2 col-form-label">Lembaga</label>
                 <div class="col-sm-10">
-                <input type="text" class="form-control" id="lembaga" name="lembaga">
+                <input type="text" class="form-control" id="nama_lembaga" name="nama_lembaga">
                 </div>
             </div>
             <div class="form-group row">
@@ -86,7 +86,7 @@
             <div class="form-group row">
                 <label for="inputNoLembaga" class="col-sm-2 col-form-label">Upload</label>
                 <div class="col-sm-10">
-                <input type="file" class="form-control" id="filepra" name="filepra">
+                <input type="file" class="form-control" id="filereq" name="filereq">
                 </div>
             </div>
             <div class="form-group row">
@@ -106,7 +106,7 @@
             <div class="form-group">
                 <label  for="inputverifkasi">Verifikasi</label>
                 <select class="custom-select">
-                    <option value="belum terverifikasi"  id="verifikasipra" name="verifikasipra">belum terverifikasi</option>
+                    <option value="belum terverifikasi"  id="verifikasi_pra" name="verifikasi_pra">belum terverifikasi</option>
                 </select>
             </div>
             </form>

@@ -6,10 +6,10 @@ use Illuminate\Http\Request;
 use App\dsnModel;
 class DosenController extends Controller
 {
-    public function index()
+    public function profile()
     {
-        $title ='Dosen';
-        $data = dsnModel::all();
-        return view('admin.dosen.index', compact('title', 'data'));
+        $title ='Profile';
+        $job ='Dosen/Koordinator';
+        return view('admindosen.user', compact('title'));
     }
 }

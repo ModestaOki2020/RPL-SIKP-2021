@@ -7,9 +7,7 @@
       <h1>
         {{ $title }}
       </h1>
-      
     </section>
-
     <!-- Main content -->
     <section class="content">
       <!-- Small boxes (Stat box) -->
@@ -23,6 +21,7 @@
             <th scope="col">Nama</th>
             <th scope="col">Tahun</th>
             <th scope="col">Semester</th>
+            <th scope="col">Status Pra</th>
             <th scope="col">Lembaga</th>
             <th scope="col">pimpinan</th>
             <th scope="col">Alamat</th>
@@ -40,29 +39,30 @@
         @php 
             $no=1;           
         @endphp
-        @foreach($pa as $p)
+        @foreach($op as $q)
         <tbody>
             <tr>
             <th scope="row">{{ $no++ }}</th>
-            <td>{{ $p->nim }}</td>
-            <td>{{ $p->nama }}</td>
-            <td>{{ $p->tahun }}</td>
-            <td>{{ $p->semester }}</td>
-            <td>{{ $p->lembaga }}</td>
-            <td>{{ $p->pimpinan }}</td>
-            <td>{{ $p->alamat }}</td>
-            <td>{{ $p->no_telpon }}</td>
-            <td>{{ $p->filepra }}</td>
-            <td>{{ $p->tools }}</td>
-            <td>{{ $p->spesifikasi}}</td>
-            <td>{{ $p->nik }}</td>
-            <td>{{ $p->penguji}}</td>
-            <td>{{ $p->ruangan }}</td>
-            <td>{{ $p->verifikasipra }}</td>
-            <td><a href="/prakp/edit/" class="btn btn-danger">edit</a></td>  
+            <td>{{ $q->nim }}</td>
+            <td>{{ $q->nama }}</td>
+            <td>{{ $q->tahun }}</td>
+            <td>{{ $q->semester }}</td>
+            <td>{{ $q->status_pra }}</td>
+            <td>{{ $q->nama_lembaga }}</td>
+            <td>{{ $q->pimpinan }}</td>
+            <td>{{ $q->alamat }}</td>
+            <td>{{ $q->no_telpon }}</td>
+            <td>{{ $q->filereq }}</td>
+            <td>{{ $q->tools }}</td>
+            <td>{{ $q->spesifikasi}}</td>
+            <td>{{ $q->nidn }}</td>
+            <td>{{ $q->penguji}}</td>
+            <td>{{ $q->ruang }}</td>
+            <td>{{ $q->verifikasi_pra }}</td>
+            <td><a href="/verifikasiprakp/edit/{{$q->id_pra}}" class="btn btn-danger">edit</a></td>  
             </tr>
                     
-        </tbody>    
+        </tbody>     
         @endforeach
 
         </table>

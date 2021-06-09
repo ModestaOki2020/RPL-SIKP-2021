@@ -7,7 +7,6 @@
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
         <h3 class="profile-username text-center">{{ auth()->user()->name }}</h3>
@@ -31,7 +30,7 @@
         <li class="active treeview">
         <li>
           <a href="{{ url('/datadosen') }}">
-            <i class="fa fa-th"></i> <span>Data Diri Dosen</span>
+            <i class="glyphicon glyphicon-user"></i> <span>Data Diri Dosen</span>
           </a>
         </li>
 
@@ -40,7 +39,7 @@
             <i class="fa fa-book"></i> <span>Lihat Bimbingan</span>
           </a>
         </li>
-        <li><a href="{{ url('/jadwal') }}"><i class="fa fa-book"></i> <span>Lihat jadwal </span></a></li>
+        <li><a href="{{ url('/jadwalDosen') }}"><i class="fa fa-book"></i> <span>Lihat jadwal </span></a></li>
         <li>
           <a href="{{ url('/logout') }}">
             <i class="fa fa-log"></i> <span>Keluar</span>

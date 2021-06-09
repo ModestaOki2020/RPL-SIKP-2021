@@ -11,17 +11,14 @@ class Dosen extends Migration
     {
         Schema::create('dosen', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('nidn')->unique();
+            $table->integer('nidn');
             $table->string('nama');
-            $table->string('email');
-            $table->string('password');
             $table->timestamps();
         });
     }
-
-   
     public function down()
     {
+        Schema::dropIfExists('dosen');
 
     }
 }

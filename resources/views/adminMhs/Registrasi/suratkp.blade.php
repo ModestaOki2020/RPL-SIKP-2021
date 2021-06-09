@@ -61,9 +61,27 @@
                 </div>
             </div>
             <div class="form-group row">
+                <label for="inputNamaLembaga" class="col-sm-2 col-form-label">Pimpinan</label>
+                <div class="col-sm-10">
+                <input type="text" class="form-control" id="pimpinan" name="pimpinan">
+                </div>
+            </div>
+            <div class="form-group row">
                 <label for="inputNamaLembaga" class="col-sm-2 col-form-label">Email</label>
                 <div class="col-sm-10">
                 <input type="text" class="form-control" id="email" name="email">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputTahun" class="col-sm-2 col-form-label">No Telpon</label>
+                <div class="col-sm-10">
+                <input type="text" class="form-control" id="no_telpon" name="no_telpon">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputNamaLembaga" class="col-sm-2 col-form-label">Alamat</label>
+                <div class="col-sm-10">
+                <input type="text" class="form-control" id="alamat" name="alamat">
                 </div>
             </div>
             <div class="form-group row">
@@ -81,7 +99,7 @@
             <div class="form-group">
                 <label  for="inputverifkasi">Verifikasi</label>
                 <select class="custom-select">
-                    <option value="belum terverifikasi"  id="verifikasisurat" name="verifikasisurat">belum terverifikasi</option>
+                    <option value="belum terverifikasi"  id="verifikasi_surat" name="verifikasi_surat">belum terverifikasi</option>
                 </select>
             </div>
             </form>

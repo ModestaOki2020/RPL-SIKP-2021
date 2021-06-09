@@ -32,6 +32,8 @@
             <th scope="col">Judul KP</th>
             <th scope="col">Penguji</th>
             <th scope="col">Ruangan</th>
+            <th scope="col">Tools</th>
+            <th scope="col">Spesifikasi</th>
             <th scope="col">Status Ujian</th>
             <th scope="col">Jadwal Ujian</th>
             <th scope="col">File</th>
@@ -42,32 +44,34 @@
         @php 
             $no=1;           
         @endphp
-        @foreach($pr as $r)
+        @foreach($dp as $p)
         <tbody>
             <tr>
             <th scope="row">{{ $no++ }}</th>
-            <td>{{ $r->nim }}</td>
-            <td>{{ $r->nama }}</td>
-            <td>{{ $r->tahun_pengajuan }}</td>
-            <td>{{ $r->semester }}</td>
-            <td>{{ $r->jenis_kelamin}}</td>
-            <td>{{ $r->nama_lembaga }}</td>
-            <td>{{ $r->pimpinan}}</td>
-            <td>{{ $r->alamat_lembaga}}</td>
-            <td>{{ $r->no_telpon }}</td>
-            <td>{{ $r->nik}}</td>
-            <td>{{ $r->judul_kp}}</td>
-            <td>{{ $r->penguji}}</td>
-            <td>{{ $r->ruang}}</td>
-            <td>{{ $r->status_ujian}}</td>
-            <td>{{ $r->jadwal_ujian}}</td>
-            <td>{{ $r->file }}</td>
-            <td>{{ $r->verifikasi }}</td>
+            <td>{{ $p->nim }}</td>
+            <td>{{ $p->nama }}</td>
+            <td>{{ $p->tahun }}</td>
+            <td>{{ $p->semester }}</td>
+            <td>{{ $p->statuskp}}</td>
+            <td>{{ $p->nama_lembaga }}</td>
+            <td>{{ $p->pimpinan}}</td>
+            <td>{{ $p->alamat_lembaga}}</td>
+            <td>{{ $p->no_telpon }}</td>
+            <td>{{ $p->nidn}}</td>
+            <td>{{ $p->judul_kp}}</td>
+            <td>{{ $p->penguji}}</td>
+            <td>{{ $p->ruang}}</td>
+            <td>{{ $p->ruang}}</td>
+            <td>{{ $p->tools}}</td>
+            <td>{{ $p->status_ujian}}</td>
+            <td>{{ $p->jadwal_ujian}}</td>
+            <td>{{ $p->filereq }}</td>
+            <td>{{ $p->verifikasi_kp }}</td>
            
-            <td><a href="/formkp/edit/" class="btn btn-danger">edit</a></td>  
+            <td><a href="/lihatverkp/edit/{{$p->id_reg}}" class="btn btn-danger">edit</a></td>  
             </tr>
                     
-        </tbody>    
+        </tbody>   
         @endforeach
 
         </table>
@@ -80,6 +84,6 @@
      <!-- /.content -->
    </div>
  
- @endsection
+
 
 @endsection

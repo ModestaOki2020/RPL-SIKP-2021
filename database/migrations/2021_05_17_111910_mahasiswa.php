@@ -11,10 +11,8 @@ class Mahasiswa extends Migration
     {
         Schema::create('mahasiswa', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('nim')->unique();
+            $table->integer('nim');
             $table->string('nama');
-            $table->string('email');
-            $table->string('password');
             $table->timestamps();
         });
     }
@@ -22,6 +20,6 @@ class Mahasiswa extends Migration
     
     public function down()
     {
-        //
+        Schema::dropIfExists('mahasiswa');
     }
 }

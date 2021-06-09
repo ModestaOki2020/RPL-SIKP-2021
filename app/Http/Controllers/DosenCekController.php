@@ -3,27 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-//use App\dsnModel;
+use Illuminate\Support\Facades\DB;
+use App\viewReg;
 class DosenCekController extends Controller
 {
     public function index()
     {
-        $title ='Dosen';
-        //$data = dsnModel::all();
-        return view('admindosen.jadwal.lihatdaftarbim', compact('title'));
+        $title ='Daftar Bimbingan';
+        $data = DB::table('view_lock')->get();
+        return view('admindosen.jadwal.lihatdaftarbim', compact('title'),['data'=>$data]);
     }
-    public function jadwalDsn()
-    {
-        $title ='Dosen';
-        //$data = dsnModel::all();
-        return view('admindosen.jadwal.lihatJadwal', compact('title'));
-    }
-    public function profile()
-    {
-        $title ='Profile';
-        //$job ='Dosen/Koordinator';
-        return view('admindosen.user', compact('title'));
-    }
-
-
+    
 }

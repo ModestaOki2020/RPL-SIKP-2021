@@ -24,6 +24,7 @@
             <th scope="col">Nama</th>
             <th scope="col">Tahun</th>
             <th scope="col">Semester</th>
+            <th scope="col">Status Pra</th>
             <th scope="col">Lembaga</th>
             <th scope="col">pimpinan</th>
             <th scope="col">Alamat</th>
@@ -49,18 +50,19 @@
             <td>{{ $p->nama }}</td>
             <td>{{ $p->tahun }}</td>
             <td>{{ $p->semester }}</td>
-            <td>{{ $p->lembaga }}</td>
+            <td>{{ $p->status_pra }}</td>
+            <td>{{ $p->nama_lembaga }}</td>
             <td>{{ $p->pimpinan }}</td>
             <td>{{ $p->alamat }}</td>
             <td>{{ $p->no_telpon }}</td>
-            <td>{{ $p->filepra }}</td>
+            <td>{{ $p->filereq }}</td>
             <td>{{ $p->tools }}</td>
             <td>{{ $p->spesifikasi}}</td>
-            <td>{{ $p->nik }}</td>
+            <td>{{ $p->nidn }}</td>
             <td>{{ $p->penguji}}</td>
-            <td>{{ $p->ruangan }}</td>
-            <td>{{ $p->verifikasipra }}</td>
-            <td><a href="/prakp/edit/" class="btn btn-danger">edit</a></td>  
+            <td>{{ $p->ruang }}</td>
+            <td>{{ $p->verifikasi_pra }}</td>
+           
             </tr>
                     
         </tbody>   

@@ -7,6 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 class verresgis extends Model
 {
     protected $table = 'prakp';
-    protected $primaryKey = "id";
-    protected $fillable =['nim','nama','tahun','semester', 'lembaga', 'alamat', 'pimpinan','no_telpon', 'filepra', 'spesifikasi','tools','nik','penguji','ruangan','verifikasipra'];
+    protected $fillable =['nim','nama','tahun','semester', 'status_pra','nama_lembaga', 'alamat', 'pimpinan','no_telpon', 'filereq', 'spesifikasi','tools','nidn','penguji','ruang','verifikasi_pra'];
 }

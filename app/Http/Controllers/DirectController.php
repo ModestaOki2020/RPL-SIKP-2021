@@ -3,20 +3,33 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use App\koordinator; 
 
 class DirectController extends Controller
 {
-    public function admin()
+    public function profile()
     {
-        return view('admin');
+        $title ='Profile';
+        $job ='ADMIN';
+        $ko=DB::table('koordinator')->get('nidn');
+    
+        return view('admin.user', compact('title', 'job'), ['ko'=>$ko]);
     }
-    public function mahasiswa()
+    public function profileinfo()
     {
-        return view('adminMhs');
+        $title ='Profile';
+        $ko=DB::table('koordinator')->get('nidn');
+        return view('admin.info', compact('title'), ['ko'=>$ko]);
     }
-    public function dosen()
+
+    public function tambah(Request $request)
     {
-        return view('admindosen');
+        DB::table('koordinator')->insert([
+            'nidn' => $request->nidn,
+            'nama' => $request->nama,
+        ]);
+        return redirect('/profileKo');
     }
 
 }

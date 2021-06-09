@@ -8,5 +8,5 @@ class registrasi extends Model
 {
     protected $table = 'registrasi';
 
-    protected $fillable =['nim','nama','semester','jenis_kelamin', 'tahun_pengajuan','nama_lembaga', 'pimpinan','alamat_lembaga', 'no_telpon', 'nik','judul_kp','penguji','ruang','status_ujian','jadwal_ujian','file', 'verifikasi'];
+    protected $fillable =['nim','nama','semester','statuskp','judul_kp', 'tahun','nama_lembaga', 'pimpinan','alamat_lembaga', 'no_telpon', 'nidn','judul_kp','penguji','ruang','status_ujian','jadwal_ujian','filereq', 'verifikasi_kp'];
 }

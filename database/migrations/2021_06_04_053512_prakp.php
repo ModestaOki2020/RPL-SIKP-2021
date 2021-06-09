@@ -15,7 +15,7 @@ class Prakp extends Migration
     {
         Schema::create('prakp', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('nim')->unique();
+            $table->integer('mahasiswa_id')->unsigned()->index()->nullable();;
             $table->string('nama');
             $table->string('tahun');
             $table->string('semester');
@@ -26,11 +26,15 @@ class Prakp extends Migration
             $table->string('filepra');
             $table->string('spesifikasi');
             $table->string('tools');
-            $table->string('nik');
+            $table->integer('dosen_id')->unsigned();
             $table->string('penguji');
             $table->string('ruangan');
             $table->string('verifikasipra');
             $table->timestamps();
+        });
+        Schema::table('prakp', function (Blueprint $table) {
+            $table->foreign('mahasiswa_id')->references('id')->on('mahasiswa');
+            $table->foreign('dosen_id')->references('id')->on('dosen');
         });
     }
 
