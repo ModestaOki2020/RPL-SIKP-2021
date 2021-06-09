@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PengajuanPrakp">
+    <EditText
+        android:id="@+id/nimpra"
+        android:layout_width="285dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:ems="10"
+        android:hint="NIM"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.642"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.127" />
+
+    <EditText
+        android:id="@+id/tahunpra"
+        android:layout_width="285dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:ems="10"
+        android:hint="Tahun"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/nimpra"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/nimpra"
+        app:layout_constraintTop_toBottomOf="@+id/nimpra"
+        app:layout_constraintVertical_bias="0.081" />
+
+    <EditText
+        android:id="@+id/semesterpra"
+        android:layout_width="285dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:ems="10"
+        android:hint="Semester"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tahunpra"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tahunpra"
+        app:layout_constraintTop_toBottomOf="@+id/tahunpra"
+        app:layout_constraintVertical_bias="0.089" />
+
+    <EditText
+        android:id="@+id/judulpra"
+        android:layout_width="285dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:ems="10"
+        android:hint="Judul"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/semesterpra"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/semesterpra"
+        app:layout_constraintTop_toBottomOf="@+id/semesterpra"
+        app:layout_constraintVertical_bias="0.092" />
+
+    <EditText
+        android:id="@+id/pembimbingpra"
+        android:layout_width="285dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:ems="10"
+        android:hint="Pembimbing"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/judulpra"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/judulpra"
+        app:layout_constraintTop_toBottomOf="@+id/judulpra"
+        app:layout_constraintVertical_bias="0.112" />
+
+
+
+    <Button
+        android:id="@+id/btnKirimData3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorPrimary"
+        android:text="Kirim"
+        android:textColor="#FFFDFD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.901" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
